@@ -1,0 +1,15 @@
+.header {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background: #1890ff;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  height: 100%;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 0;
+}

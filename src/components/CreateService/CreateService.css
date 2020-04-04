@@ -1,0 +1,85 @@
+@import '~antd/dist/antd.css';
+
+.create-service {
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr auto auto 1fr auto;
+  padding: 15px 180px;
+}
+
+.component-header, .filename, .auto-start-checkbox, .clear, .start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro, .outro, .watch, .output {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.file-pickers {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 1fr;
+}
+
+.intro, .outro, .watch, .output {
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.intro > button, .outro > button, .watch > button, .output > button {
+  min-width: 200px;
+  margin-bottom: 10px;
+}
+
+.create-new-service-label {
+  grid-column: 1/4;
+}
+
+.filename {
+  padding-top: 25px;
+  grid-column: 1/4;
+}
+
+.filename-label {
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+.filename > .ant-input-group-wrapper {
+  width: 400px;
+}
+
+.auto-start-checkbox {
+  grid-column: 1/4;
+  padding-top: 25px;
+}
+
+.start, .clear {
+  display: inline;
+}
+
+.clear {
+  margin-right: 15px;
+}
+
+.file-pickers {
+  grid-column: 1/4;
+}
+
+.clear-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/4;
+  padding-top: 20px;
+}
+
+.path-selected {
+  word-break: break-all;
+}
